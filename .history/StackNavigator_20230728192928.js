@@ -7,15 +7,13 @@ const Tab = createBottomTabNavigator();
 
 export default function BottomTabs() {
   return (
-      <Tab.Navigator screenOptions={{
-        tabBarShowLabel: false,
-    }}>
+    <Tab.Navigator>
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
           tabBarLabel: "Home",
-          headerShown: true,
+            headerShown: true,
           tabBarLabelshown: false,
           tabBarIcon: ({ focused }) =>
             focused ? (

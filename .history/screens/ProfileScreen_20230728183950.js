@@ -4,11 +4,11 @@ import React from "react";
 const ProfileScreen = () => {
   return (
     <View>
-      <Text>ProfileScreen</Text>
+      <Text>HomeScreen</Text>
     </View>
   );
 };
 
-export default ProfileScreen;
+export default HomeScreen;
 
 const styles = StyleSheet.create({});

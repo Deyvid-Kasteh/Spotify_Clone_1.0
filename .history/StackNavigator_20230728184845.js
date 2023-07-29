@@ -7,22 +7,13 @@ const Tab = createBottomTabNavigator();
 
 export default function BottomTabs() {
   return (
-      <Tab.Navigator screenOptions={{
-        tabBarShowLabel: false,
-    }}>
+    <Tab.Navigator>
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
           tabBarLabel: "Home",
           headerShown: true,
-          tabBarLabelshown: false,
-          tabBarIcon: ({ focused }) =>
-            focused ? (
-              <Ionicons name="home" size={24} color="black" />
-            ) : (
-              <Ionicons name="home-outline" size={24} color="black" />
-            ),
         }}
       />
       <Tab.Screen
@@ -30,13 +21,8 @@ export default function BottomTabs() {
         component={ProfileScreen}
         options={{
           tabBarLabel: "Profile",
-          headerShown: true,
-          tabBarIcon: ({ focused }) =>
-            focused ? (
-              <Ionicons name="person" size={24} color="black" />
-            ) : (
-              <Ionicons name="person-outline" size={24} color="black" />
-            ),
+            headerShown: true,
+
         }}
       />
     </Tab.Navigator>
